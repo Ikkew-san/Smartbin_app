@@ -1,0 +1,36 @@
+<ion-content padding>
+    <div class="bg-cover"></div>
+
+    <!-- Register -->
+    <div class="register" padding>
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" >
+            <ion-item>
+                <ion-label color="primary" stacked>Name</ion-label>
+                <ion-input type="text" name="name" ngModel></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary" stacked>Username</ion-label>
+                <ion-input type="text" name="username" ngModel></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary" stacked>Passname</ion-label>
+                <ion-input type="password" name="password" ngModel></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary" stacked>Confirm Password</ion-label>
+                <ion-input type="password" name="confirm-password" ngModel></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary" stacked>E-Mail</ion-label>
+                <ion-input type="email" name="email" ngModel></ion-input>
+            </ion-item>
+
+            <button ion-button type="submit" round block style="margin-top: 20px">Register</button>    
+        
+        </form>
+    </div>
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "smartbin-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "edc6a4c2"
+}

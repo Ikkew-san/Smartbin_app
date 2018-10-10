@@ -1,0 +1,41 @@
+<ion-content>
+    <!-- Logo -->
+    <div class="logo">
+        <img src="#" alt="logo">
+    </div>
+
+    <!-- form login -->
+    <div class="login>" style="padding: 20px">
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-auto>
+              <ion-icon name="contact"></ion-icon>
+            </ion-col>
+            <ion-col>
+              <ion-item>
+                <ion-input type="text" placeholder="Username" name="username" ngModel></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col col-auto>
+              <ion-icon name="lock"  style="padding: 0 3.5px"></ion-icon>
+            </ion-col>
+            <ion-col>
+              <ion-item>
+                <ion-input type="password" placeholder="Password" name="password" ngModel></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <button ion-button type="submit" round block style="margin-top: 20px">Login</button>    
+      </form>
+
+      <button ion-button (click)="gotoregister()" outline round block style="margin-top: 10px">Register</button>    
+    </div>
+</ion-content>
